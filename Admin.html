@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+<!--This Script tag to make email id validation not working for me-->
+             <script>
+          function ValidateEmail(mail) 
+          {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form1.text1.value))
+            {
+                return (true)
+            }
+            alert("Invalid Email ID. Please enter your valid Email ID.")
+            return (false)
+          }
+      </script> 
+  </head>
+  <body>
+  <div class="card" >
+     <div class="card-header" >
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <a class="navbar-brand " href="#" style="margin: 0">  
+        <img src="logo.png" class="img-fluid" alt="Responsive image" class="float-left" style="width: 15rem; height: 5rem  " >
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto my-2 my-lg-0">
+      <li class="nav-item active" style="padding: 1%">
+       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal0">
+            Add New Profile
+            <span class="sr-only">(current)</span>
+        </button>
+        <div class="modal fade" id="exampleModal0" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <div class="modal-header" style="background-color: #007bff ">
+                   <h5 class="modal-title" id="exampleModalLabel" >Add New Profile</h5>
+                </div>
+                <div class="modal-body">
+                 <form>
+                   <div class="form-group">
+                       <label for="new-user" class="col-form-label">Name</label>
+                       <input type="text" class="form-control" id="new-user">
+                   </div>
+                   <div class="form-group">
+                       <label for="email-id" class="col-form-label">E-mail ID</label>
+                       <input type="email" class="form-control" id="email-id" aria-describedby="emailHelp" name="text1" >
+                   </div>
+                   <div class="form-group">
+                       <label for="password" class="col-form-label">Password</label>
+                       <input type="password" class="form-control" id="password">
+                   </div>
+                </form>
+               </div>
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-primary">Update </button>
+               </div>
+           </div>
+        </div>
+        </div>
+      </li>
+      <li class="nav-item" style="padding: 1%">
+       <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal1">
+       Add Skills
+       </button>
+       <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <div class="modal-header" style="background-color: #007bff ">
+                   <h5 class="modal-title" id="exampleModalLabel" >Add Skill</h5>
+                </div>
+                <div class="modal-body">
+                 <form>
+                   <div class="form-group">
+                       <label for="skill" class="col-form-label">Skills</label>
+                       <input type="text" class="form-control" id="skill">
+                   </div>
+                   <div class="form-group">
+                       <label for="message-text" class="col-form-label">Experience</label>
+                       <textarea class="form-control" id="message-text"></textarea>
+                   </div>
+                </form>
+               </div>
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-primary">Update </button>
+               </div>
+           </div>
+        </div>
+        </div>
+      </li>
+      <li class="nav-item" style="padding: 1%">
+        <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#exampleModal2">
+        Add Projects
+        </button>
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document">
+           <div class="modal-content">
+               <div class="modal-header" style="background-color: #007bff ">
+                   <h5 class="modal-title" id="exampleModalLabel" >Add Projects</h5>
+                </div>
+                <div class="modal-body">
+                 <form>
+                   <div class="form-group">
+                       <label for="project-name" class="col-form-label">Project Name</label>
+                       <input type="text" class="form-control" id="project-name">
+                   </div>
+                   <div class="form-group">
+                       <label for="skill suggestions" class="col-form-label">Skills required for Project</label>
+                       <input type="text" class="form-control" id="skill-suggestion">
+                   </div>
+                </form>
+               </div>
+               <div class="modal-footer">
+                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                   <button type="button" class="btn btn-primary">Update </button>
+               </div>
+           </div>
+        </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+         </nav>
+      </div>
+      <div class="card-body" id="list">
+      </div>
+ </div>
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+   <script src="Admin.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
